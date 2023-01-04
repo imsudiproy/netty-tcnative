@@ -5,7 +5,6 @@
 # Instructions:
 # Download build script: wget https://raw.githubusercontent.com/linux-on-ibm-z/scripts/master/netty-tcnative/2.0.52/build_netty.sh
 # Execute build script: bash build_netty.sh    (provide -h for help)
-#
 
 set -e  -o pipefail
 
