@@ -5,6 +5,7 @@
 # Instructions:
 # Download build script: wget https://raw.githubusercontent.com/linux-on-ibm-z/scripts/master/netty-tcnative/2.0.52/build_netty.sh
 # Execute build script: bash build_netty.sh    (provide -h for help)
+#
 
 set -e  -o pipefail
 
@@ -253,7 +254,7 @@ prepare #Check Prequisites
 
 DISTRO="$ID-$VERSION_ID"
 case "$DISTRO" in
-"ubuntu-18.04" | "ubuntu-20.04" | "ubuntu-22.04" | "ubuntu-22.10")
+"ubuntu-18.04" | "ubuntu-20.04" | "ubuntu-22.04 " | "ubuntu-22.10")
 	printf -- "Installing %s %s for %s \n" "$PACKAGE_NAME" "$PACKAGE_VERSION" "$DISTRO" |& tee -a "$LOG_FILE"
 	printf -- "Installing dependencies... it may take some time.\n"
 	sudo apt-get update -y
